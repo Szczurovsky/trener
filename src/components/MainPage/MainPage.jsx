@@ -17,14 +17,14 @@ const Page = styled.div`
 class MainPage extends Component {
     render() {
         return (
-            // <BrowserRouter>
-            //     <Routes>
+
 
             <Page>
-
+                strona glowna
             </Page>
-            //     </Routes>
-            // </BrowserRouter>
+
+
+
         )
     }
 }
