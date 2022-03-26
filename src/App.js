@@ -34,6 +34,7 @@ function App() {
                 <Content>
                     <Wrapper>
                         <Routes>
+                            <Route path="/" element={<MainPage />} />
                             <Route path="home" element={<MainPage />}/>
                             <Route path="about" element={<About />} />
                             <Route path="plan" element={<Plan />} /> 

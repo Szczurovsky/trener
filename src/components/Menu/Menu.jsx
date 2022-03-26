@@ -23,6 +23,14 @@ const Linkin = styled(Link)`
     color:#bbbbbb;
     background-color: #2020207f ;
   }
+  &:last-child{
+   
+    background-color: #4169e1b5;
+  }
+    &:last-child:hover{
+    background-color: #4169e1;
+    color:white;
+  }
 `
 
 
@@ -32,8 +40,8 @@ export const Menu = props => {
       <Linkin to="home">Strona główna</Linkin>
       <Linkin to="about">O mnie</Linkin>
       <Linkin to="plan">Plan</Linkin>
-      <Linkin to="contact">Kontakt</Linkin>
       <Linkin to="metamorfozy">Metamorfozy</Linkin>
+      <Linkin to="contact">Kontakt</Linkin>
     </Wrapper>
   )
 

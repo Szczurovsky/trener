@@ -11,7 +11,8 @@ const NavBar = styled.header`
 
 const Wrapper = styled.div`
     width:60%;
-    margin:6px 0;
+    /* margin:6px 0; */
+    height:70px;
     display:flex;
     justify-content:space-between;
     align-items:center;
