@@ -11,26 +11,29 @@ import { ReactComponent as Ciezar } from "./dumbbell-solid.svg"
 import useImage from "use-image"
 import Konva from "konva"
 const Page = styled.div`
-    flex-direction: column;
-    display:flex;
-    justify-content:space-between;
+/* width: 100vw;
+    display: flex; */
+    /* justify-content:center; */
 
 `
-// const MyImage = () => {
-//     const [image] = useImage('https://konvajs.org/assets/lion.png')
-//     return <Image image={image} />
-// }
+
+const Wrap = styled.div`
+    /* width:100%;
+    display:flex;
+    justify-content:center;
+     flex-direction: column; */
+`
 
 const Graph = props => {
-    const url = "../MainPage/pokaz.png"
-    const [image, status] = useImage(pokaz)
-    console.log(image, status)
+
+   
+  
 
     return (
 
 
-        <Page>
-
+        <Page>  
+            <Wrap>
             {/* Wersja Big/wide */}
             {props.width >= 1000 ?
                 (<>
@@ -54,8 +57,8 @@ const Graph = props => {
                     </Stage>
                 </>) : "prawda"}
 
-            napisz sie
-
+       
+            </Wrap>
         </Page>
     )
 

@@ -1,6 +1,7 @@
 import react, { Component } from 'react';
 import styled from "styled-components"
 import { Header } from "../Header/Header"
+import {Baner} from "../Baner/Baner"
 import Graph from "./Graph"
 import {
     BrowserRouter,
@@ -9,12 +10,27 @@ import {
 } from "react-router-dom";
 
 const Page = styled.div`
-    width:100%;
+     width: 100%;
+    display: flex;
+    /* justify-content: center; */
+   flex-direction: column;
+ 
+`
 
+const Directions = styled.div`
+
+position:relative;
+top:100vh;
     display:flex;
+    flex-direction: column;
     justify-content:center;
 `
 
+const Zapchaj = styled.div`
+height:2000px;
+background-color: blue;
+width:100%;
+`
 
 class MainPage extends Component {
     constructor(props) {
@@ -37,30 +53,15 @@ class MainPage extends Component {
     }
     render() {
         return (
-            <>
-
+        <>
+         <Baner/>
+            <Directions>    
                 <Page>
-                    {console.log(this.state.width)}
-                    <Graph width={this.state.width} />
+                        <Graph width={this.state.width} />
+                      <Zapchaj/>
                 </Page>
-            </>
-            /* <svg width="50vw" height="50vh">
-                               <defs>
-                                   <clipPath id="myCircle">
-                                       <circle cx="250" cy="145" r="125" fill="#000" />
-                                   </clipPath>
-                               </defs>
-                               <image width="500" height="350" clip-path="url(#myCircle)" />
-                           </svg> */
-            // <Shape
-            //     name="Circle"
-            //     id="circle-shape-id"
-            //     width="300px"
-            //     height="300px"
-            //     showLabel={true}>
-            //     sss
-            // </Shape>
-
+            </Directions>
+        </>
         )
     }
 }
