@@ -18,6 +18,7 @@ const Page = styled.div`
 `
 
 const Wrap = styled.div`
+overflow: hidden;
     /* width:100%;
     display:flex;
     justify-content:center;
@@ -32,11 +33,11 @@ const Graph = props => {
     return (
 
 
-        <Page>  
-            <Wrap>
+        <>  
+            {/* <Wrap> */}
             {/* Wersja Big/wide */}
             {props.width >= 1000 ?
-                (<>
+                (<Wrap>
                     <svg width="1200" height="140">
                         <line x1="300" x2="900" y1="80" y2="80" stroke="royalblue" />
                         <circle cx="300" cy="80px" r="40" fill="royalblue" />
@@ -55,11 +56,11 @@ const Graph = props => {
                             <Text x={850} y={0} text="To jest przykladowy tekst ma sie dzaiala" fill="black" width="100" align="center" />
                         </Layer>
                     </Stage>
-                </>) : "prawda"}
+                </Wrap>) : "prawda"}
 
-       
-            </Wrap>
-        </Page>
+ 
+            {/* </Wrap> */}
+        </>
     )
 
 }

@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Header } from "../Header/Header"
 import {Baner} from "../Baner/Baner"
 import Graph from "./Graph"
+import {CardCarousel} from "../CardCarousel/CardCarousel"
 import {
     BrowserRouter,
     Routes,
@@ -35,7 +36,7 @@ width:100%;
 class MainPage extends Component {
     constructor(props) {
         super(props);
-        this.state = { width: 0, height: 0 };
+        this.state = { width: 0 };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -49,7 +50,7 @@ class MainPage extends Component {
     }
 
     updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        this.setState({ width: window.innerWidth });
     }
     render() {
         return (
@@ -58,7 +59,8 @@ class MainPage extends Component {
             <Directions>    
                 <Page>
                         <Graph width={this.state.width} />
-                      <Zapchaj/>
+                        Nasze przemiany!
+                     <CardCarousel />
                 </Page>
             </Directions>
         </>

@@ -15,7 +15,7 @@ width:300px;
 top:300px;
 left:300px;
 color:white;
-position:fixed;
+
 flex-direction:column;
 `
 const Button = styled.button`

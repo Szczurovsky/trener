@@ -11,7 +11,7 @@ import { Header } from "./components/Header/Header";
 import { Metamorfozy } from "./components/Metamorfozy/Metamorfozy";
 import { Kontakt } from "./components/Kontakt/Kontakt";
 import { Baner } from "./components/Baner/Baner";
-const Content = styled.header`
+const Content = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ function App() {
         <>
             <Router>
                 <Header />
-                {/* <Baner /> */}
+
                 <Content>
                     <Wrapper>
                         <Routes>

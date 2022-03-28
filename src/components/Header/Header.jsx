@@ -13,7 +13,7 @@ const NavBar = styled.header`
 const Bar = styled.div`
     width:100%;
     display:flex;
-      height:7vh;
+    height:7vh;
     justify-content:center;
      background-color:black;
      position:fixed;
